@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <body>
+        <h1>Quotes</h1>
+            <p>
+                <script>
+                    //Create array, prompt user, and use reminder//
+                    var quotes = ["make today amazing", "think positive", "believe you can and you're halfway there", "your patience is your power", "mistakes are proof that you are trying" ];
+                    var yourNumber = prompt("Please enter a number");
+                    var index = yourNumber % 5;
+                    var reminder = quotes[index];
+                    document.write(reminder);
+                </script>
+            </p>
+            <P>
+                <script>
+                    //Create array, prompt user, delete first website, and make a list//
+                    var Urls = ["https://www.youtube.com/", "https://parisbaguette.com/", "https://drafthouse.com/dfw"];
+                    var yourUrls = prompt("Please enter a favorite website url")
+                    Urls[3] = [yourUrls] ;    //add new prompt user website url//
+                    Urls.shift(0);    //remove the first website url//
+                    document.write(Urls);   //output of new list of urls array//
+                </script>
+            </P>
+    </body>
+</html>
