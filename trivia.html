@@ -8,11 +8,16 @@
 	<body>
 		<header>
 		<h1>Quiz</h1>
-		<script src="quiz.js"></script>
+		<script src="trivia.js"></script>
 		</header>
 		<script>
+            var greetings = triviaTime();
+
+            var email = validEmail(email);
+			document.write(email.ToUpperCase.split("@"));
+
 			var score = triviaQuiz();
-			document.write('your score is' + score);
+			document.write("<font size='7px'></font>",'Your score is ' + score);
 		</script>
 	</body>
 </html>
